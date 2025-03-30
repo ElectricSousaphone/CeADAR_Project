@@ -2,7 +2,7 @@
 """
 Created on Thu Mar 27 18:48:04 2025
 
-@author: Dhivaang
+@author: Shiv
 """
 
 
@@ -14,7 +14,6 @@ from dotenv import load_dotenv
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import PyPDF2
 import docx
-import numpy as np
 import time
 from huggingface_hub.utils import HfHubHTTPError
 from loguru import logger

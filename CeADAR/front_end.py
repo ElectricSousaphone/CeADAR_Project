@@ -2,7 +2,9 @@
 """
 Created on Sat Mar 29 17:48:04 2025
 
-@author: Dhivaang
+This code presents the RAG model onto 
+
+@author: Shiv
 """
 
 import streamlit as st
