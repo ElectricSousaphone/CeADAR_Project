@@ -2,13 +2,14 @@
 """
 Created on Sat Mar 29 17:48:04 2025
 
-This code presents the RAG model onto 
+This code presents the RAG model onto dashboard where questions cn be typed in 
+and answered
 
 @author: Shiv
 """
 
 import streamlit as st
-import CeADAR_Interview as ci
+import answer_retrieval as ci
 import os
 from dotenv import load_dotenv
 
@@ -19,7 +20,7 @@ def main():
     
     # Create the Streamlit UI
     st.title("📝 Rag model CeADAR exercise")
-    st.write("Please enter your question and click 'Answer question' to get a response. For example: Explain how the attention head works or What is the name of the DeepSeek R1 model?")
+    st.write("Please enter your question and click 'Answer question' to get a response. For example: Explain how the attention head in transformers work or What is the name of the DeepSeek R1 model?")
     
     # Text input area
     st.subheader("Question")
