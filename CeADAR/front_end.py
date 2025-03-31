@@ -42,7 +42,7 @@ def main():
                 
                 # Display result
                 st.subheader("Answer")
-                st.text_area("Model Output:", result, height=100, disabled=True)
+                st.text_area("Model Output:", result, height=200, disabled=True)
     
     # Footer
     st.markdown("---")

@@ -21,14 +21,15 @@ from huggingface_hub.utils import HfHubHTTPError
 from loguru import logger
 from dataclasses import dataclass
 
+
 @dataclass
 class Configurations:
     filepaths = [
-        'EU AI Act Doc.docx', 
-        'Deepseek-r1.pdf', 
-        'Attention_is_all_you_need.pdf'
+        'Input_documents/EU AI Act Doc.docx', 
+        'Input_documents/Deepseek-r1.pdf', 
+        'Input_documents/Attention_is_all_you_need.pdf'
     ]
-    pinecone_index = "ceadar-documents1"
+    pinecone_index = "ceadar-documents"
     pinecone_api_key = os.getenv('PINECONE_API_KEY')
     delete_and_create_vect_db = True
 
@@ -230,7 +231,7 @@ def main():
 
     documents = load_data.process_documents(cfg.filepaths)    
     vector_db_pipeline.upsert_documents(documents)
-  
+
 
 if __name__ == "__main__":
     main()
