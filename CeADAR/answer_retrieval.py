@@ -21,7 +21,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Configurations:
-    pinecone_index = "ceadar-documents"
+    pinecone_index = "ceadar-documents1"
     pinecone_api_key = 'PINECONE_API_KEY'
 
 
@@ -141,7 +141,7 @@ class RAGPipeline:
                 logger.info(f"HTTP Error {e}")
                 time.sleep(2)
         
-        return answer
+        return answer, context
 
 
 def main():

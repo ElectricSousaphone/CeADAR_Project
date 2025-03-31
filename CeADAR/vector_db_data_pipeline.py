@@ -29,7 +29,7 @@ class Configurations:
         'Input_documents/Deepseek-r1.pdf', 
         'Input_documents/Attention_is_all_you_need.pdf'
     ]
-    pinecone_index = "ceadar-documents"
+    pinecone_index = "ceadar-documents1"
     pinecone_api_key = os.getenv('PINECONE_API_KEY')
     delete_and_create_vect_db = True
 
