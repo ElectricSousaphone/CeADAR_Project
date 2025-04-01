@@ -38,7 +38,7 @@ def main():
             st.error("Please enter a question for the model to process!")
         else:
             with st.spinner("Processing..."):
-                result = rag_pipeline.answer_question(user_text)
+                result, _ = rag_pipeline.answer_question(user_text)
                 
                 # Display result
                 st.subheader("Answer")
