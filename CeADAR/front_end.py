@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 
 def main():
     # Set up the Streamlit page
-    st.set_page_config(page_title="Text Processor", page_icon="📝")
+    st.set_page_config(page_title="QA Rag Model", page_icon="📝")
     
     # Create the Streamlit UI
     st.title("📝 Rag model CeADAR exercise")
